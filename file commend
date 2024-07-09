@@ -1,0 +1,11 @@
+ <form action="./m1-c.html"><button class="button-class"><h3><i class="fa fa-bullseye "></i>1پیشخوان</h3></button></form>
+                <form action="./m1-c.html"><button class="button-class" style="position: absolute; left: 22.2rem;"><h3><i class="fa fa-bullseye "></i>پروفایل</h3></button></form>
+                <form action="./m1-c.html"><button class="button-class" style="position: absolute; left: 29.5rem;"><h3><i class="fa fa-bullseye "></i>قوانین سایت</h3></button></form>
+                <form action="./m1-c.html"><button class="button-class" style="position: absolute; left: 36.9rem;"><h3><i class="fa fa-bullseye "></i>نظرات</h3></button></form>
+                <form action="./m1-c.html"><button class="button-class" style="position: absolute; left: 44.2rem;"><h3><i class="fa fa-bullseye "></i>سیگنال</h3></button></form>
+                <form action="./m1-c.html"><button class="button-class" style="position: absolute; left: 51.5rem; width: 140px;"><h3><i class="fa fa-bullseye "></i>راهنمای استفاده از سیکنال</h3></button></form>
+                <form action="./m1-c.html"><button class="button-class" style="position: absolute; left: 61.3rem;"><h3><i class="fa fa-bullseye "></i>نکات اموزش</h3></button></form>
+                <form action="./m1-c.html"><button class="button-class" style="position: absolute; left: 68.6rem;"><h3><i class="fa fa-bullseye "></i>سابقه تراکنش</h3></button></form>
+                <form action="./m1-c.html"><button class="button-class" style="position: absolute; left: 73.5rem;"><h3><i class="fa fa-bullseye "></i>برایند سایت</h3></button></form>
+                <form action="./m1-c.html"><button class="button-class" style="position: absolute; left: 80.8rem;"><h3><i class="fa fa-bullseye "></i>وضیعت اشتراک</h3></button></form>
+                <form action="./m1-c.html"><button class="button-class" style="position: absolute; left: 87.9rem;"><h3><i class="fa fa-bullseye "></i>خروج از حساب کاربری</h3></button></form>
