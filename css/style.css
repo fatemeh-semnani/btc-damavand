@@ -1,0 +1,165 @@
+
+@font-face {
+  font-family: tanha;
+  src:url('FontName.ttf') format('truetype');
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: tanha;
+}
+
+html,body{
+  min-width: 100vh;
+  height: auto;
+  background-color: var(--bg-body);
+}
+ 
+:root{
+  --main-color: #ffffff;
+  --bg-color: #85ebd6;
+  --text-color:rgb(0, 217, 255);
+  --bg-body:rgb(188, 233, 225);
+ 
+}
+
+.navigatin{
+  position: fixed;
+  inset: 20px;
+  background-color: var(--main-color);
+  width: 80px; 
+  border-right: 10px solid transparent;
+  border-radius: 55px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease; 
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+}
+
+
+.toggle{
+  position: absolute;
+  bottom: 15px;
+  left: 14px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.toggle::before{
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--main-color);
+  transform: translateY(-5px);
+  transition: 0.7s;
+}
+
+.toggle::after{ 
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--main-color);
+  transform: translateY(5px);
+  transition: 0.7s;
+}
+
+.navigatin.active{/* ابنجا برای اون باز و بسته شدن منو هست*/
+  width: 240px;
+  border-radius: 20px;
+  height: auto;
+}
+
+.navigatin.active .toggle::before{
+  transform: translateY(0px) rotate(-405deg);
+}
+
+.navigatin.active .toggle::after{
+  transform: translateY(0px) rotate(225deg);
+}
+
+.navigatin ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.navigatin ul li {
+  position: relative;
+  list-style: none;
+  top: 15px;
+  width: 220px;
+  height: 56px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s all;
+}
+
+.navigatin ul li:hover{
+  background-color: var(--bg-body);
+}
+
+.navigatin ul li a{
+  position: relative;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: var(--text-color);
+  align-items: center;
+  /* justify-content: flex-start; */
+  padding-right:  10px;
+  transition: 0.3s all;
+  /* overflow: hidden; */
+}
+
+.navigatin ul li a:hover{
+  color: rgb(0, 0, 0);
+}
+.navigatin ul li a .icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  height: 50px;
+  text-align: center;
+}
+
+.title{
+  margin-right: 20px;
+}
+.navigatin ul li.title{
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.navigatin ul li .icon ion-icon{
+  font-size: 1.75em;
+}
+
+.navigatin ul li:not(:first-child):hover::before{
+
+}
+
+.navigatin ul li:not(:first-child):hover::after{
+
+
+}
